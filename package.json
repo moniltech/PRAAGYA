@@ -1,0 +1,38 @@
+{
+  "name": "v_chat_mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "downloadjs": "^1.4.7",
+    "express": "^4.17.1",
+    "express-http-to-https": "^1.1.4",
+    "firebase-admin": "^8.13.0",
+    "helmet": "^3.23.3",
+    "joi": "^14.3.1",
+    "moment": "^2.27.0",
+    "moment-timezone": "^0.5.31",
+    "mongoose": "^5.10.0",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.4",
+    "password-hash": "^1.2.2",
+    "path": "^0.12.7",
+    "pdf-lib": "^1.10.0",
+    "request": "^2.88.2",
+    "socket.io": "^2.3.0",
+    "underscore": "^1.10.2"
+  }
+}
