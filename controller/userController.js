@@ -862,8 +862,8 @@ module.exports = {
           if (error) {
               console.log(error.message);
           } else {
-              console.log("Sending Notification Testing....!!!");
-              console.log("helloo........" + response.body);
+              // console.log("Sending Notification Testing....!!!");
+              // console.log("helloo........" + response.body);
               // if(response.body.success=="1"){
               //     console.log("Send Text notification of new order..........!!!");
               //     sendMessages(sendermobile[0].mobile,newOrderNotification);
