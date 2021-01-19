@@ -61,5 +61,6 @@ userRouter.post("/getMyBlockUserList",userController.getUserBlockList);
 userRouter.post("/deleteBlock",userController.deleteBlock);
 userRouter.post("/removeBlockUser",userController.userBlockRemove);
 userRouter.post("/sendnotification",userController.sendnotification);
+userRouter.post("/getUsersweb",userController.getUsersweb);
 // userRouter.post("/deleteAll",userController.removeAllUsers);
 module.exports = userRouter;

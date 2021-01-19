@@ -258,6 +258,26 @@ module.exports = {
     }
   },
 
+  getUsersweb : async (req, res) => {
+    try{
+      var user_data = await userSchemaModel.find()
+                                            .populate({
+                                              path : "state"
+                                            })
+                                            .populate({
+                                              path : "affilatedWith"
+                                            });
+      if(user_data.length == 0){
+        res.status(200).json({IsSuccess : true, Data : 0, Message : "No Data Found"});
+      }
+      else{
+        res.status(200).json({IsSuccess :true, Data : user_data, Message : "Data Found"});
+      }
+    }catch(err){
+      res.status(500).json({ IsSuccess : false, Message : err.message});
+    }
+  },
+
   getUsers: async (req, res) => {
     //const user = await userSchemaModel.find({Status:true}).sort({ created: -1 });
     const { UserId, keyword } = req.body;
